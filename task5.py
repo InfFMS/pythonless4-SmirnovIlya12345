@@ -8,10 +8,9 @@ from math import log10
 
 a=int(input())
 def anti(a):
-    b=int(round(log10(a+0.5)+0.5))
-    c=[]
-    c.append(a)
-    for i in range(0, b):
-        c[i]=c[-i]
+    c=0
+    for i in range(0, round(log10(a+1)+0.5)):
+        b=str(a)
+        c+=int(b[i])*(10**i)
     print(c)
 anti(a)

@@ -19,12 +19,36 @@ for i in range(2, b):
         a.append(i)
 c=[]
 for i in range(0, len(a)):
-    if True:
-        if b%a[i]==0:
+    if b%a[i]==0:
             c.append(a[i])
             b=b/a[i]
-        else:
-            break
+    if b%a[i]==0:
+            c.append(a[i])
+            b=b/a[i]
+    if b%a[i]==0:
+            c.append(a[i])
+            b=b/a[i]
+    if b%a[i]==0:
+            c.append(a[i])
+            b=b/a[i]
+    if b%a[i]==0:
+            c.append(a[i])
+            b=b/a[i]
+    if b%a[i]==0:
+            c.append(a[i])
+            b=b/a[i]
+    if b%a[i]==0:
+            c.append(a[i])
+            b=b/a[i]
+    if b%a[i]==0:
+            c.append(a[i])
+            b=b/a[i]
+    if b%a[i]==0:
+            c.append(a[i])
+            b=b/a[i]
+    if b%a[i]==0:
+            c.append(a[i])
+            b=b/a[i]
 if c==[]:
     c.append(b)
 print(c)

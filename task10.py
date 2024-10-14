@@ -10,5 +10,18 @@
 # перевод из десятичной системы счисления в любую
 # перевод из любой системы счисления в десятичную
 # Объедините эти две подзадачи, получите ответ.
-
+from math import log
+num = (int(input()))
+from_base = (int(input()))
+to_base = (int(input()))
+def convert_base(num, from_base, to_base):
+    a=0
+    for i in range(0, round(log(num+1, 10)+0.5)):
+        b=str(a)
+        print(i)
+        a+=int(b[-i-1])*(10**i)
+    print(round(log(num+1, 10)+0.5), "ё")
+    print(a)
+    print(a*from_base)
+convert_base(num, from_base, to_base)
 
