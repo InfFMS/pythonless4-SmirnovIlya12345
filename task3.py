@@ -5,4 +5,73 @@
 # Пример:
 # 2013
 # MMXIII
-
+a=int(input())
+def roman(a):
+    i=""
+    x=""
+    c=""
+    m=""
+    if a//1000==1:
+        m="M"
+    elif a//1000==2:
+        m="MM"
+    elif a//1000==3:
+        m="MMM"
+    elif a//1000==4:
+        m="MMMM"
+    if a//100-10*(a//1000)==1:
+        c="C"
+    elif a//100-10*(a//1000)==2:
+        c="CC"
+    elif a//100-10*(a//1000)==3:
+        c="CCC"
+    elif a//100-10*(a//1000)==4:
+        c="CD"
+    elif a//100-10*(a//1000)==5:
+        c="D"
+    elif a//100-10*(a//1000)==6:
+        c="DC"
+    elif a//100-10*(a//1000)==7:
+        c="DCC"
+    elif a//100-10*(a//1000)==8:
+        c="DCCC"
+    elif a//100-10*(a//1000)==9:
+        c="CM"
+    if a//10-10*(a//100)==1:
+        x="X"
+    elif a//10-10*(a//100)==2:
+        x="XX"
+    elif a//10-10*(a//100)==3:
+        x="XXX"
+    elif a//10-10*(a//100)==4:
+        x="XL"
+    elif a//10-10*(a//100)==5:
+        x="L"
+    elif a//10-10*(a//100)==6:
+        x="LX"
+    elif a//10-10*(a//100)==7:
+        x="LXX"
+    elif a//10-10*(a//100)==8:
+        x="LXXX"
+    elif a//10-10*(a//100)==9:
+        x="XC"
+    if a%10==1:
+        i="I"
+    elif a%10==2:
+        i="II"
+    elif a%10==3:
+        i="III"
+    elif a%10==4:
+        i="IV"
+    elif a%10==5:
+        i="V"
+    elif a%10==6:
+        i="VI"
+    elif a%10==7:
+        i="VII"
+    elif a%10==8:
+        i="VIII"
+    elif a%10==9:
+        i="IX"
+    print(m,c,x,i,sep="")
+roman(a)

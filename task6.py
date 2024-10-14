@@ -8,4 +8,20 @@
 # 25 15
 # Вывод:
 # 5 3
-
+a=int(input())
+b=int(input())
+def canceling(a,b):
+    c=0
+    c=max(a,b)
+    d=min(a,b)
+    f=0
+    if c%d==0:
+        f=d
+    else:
+        e=1
+        for i in range(1, d//2+1):
+            if c%i==0 and d%i==0:
+                e=i
+        f=e
+    print(int(a/f), int(b/f))
+canceling(a,b)

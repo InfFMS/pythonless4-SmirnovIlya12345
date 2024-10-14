@@ -10,3 +10,9 @@
 # ********
 # *********
 # **********
+a=int(input())
+def trianle(a):
+    for i in range(1, a+1):
+        print(i*"*")
+        i+=1
+trianle(a)
