@@ -49,6 +49,4 @@ for i in range(0, len(a)):
     if b%a[i]==0:
             c.append(a[i])
             b=b/a[i]
-if c==[]:
-    c.append(b)
 print(c)
