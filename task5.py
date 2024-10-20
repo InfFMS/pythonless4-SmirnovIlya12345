@@ -4,3 +4,13 @@
 # Пользоваться input()[::-1] запрещено!
 # Идея задачи реализовать алгоритм,
 # который будет работать для любого введенного натурального числа.
+from math import log10
+
+a=int(input())
+def anti(a):
+    c=0
+    for i in range(0, round(log10(a+1)+0.5)):
+        b=str(a)
+        c+=int(b[i])*(10**i)
+    print(c)
+anti(a)

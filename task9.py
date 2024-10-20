@@ -3,4 +3,15 @@
 # или слово NO в противном случае.
 # Операцией возведения в степень пользоваться нельзя!
 # Задача на рекурсию!
+a=int(input())
+def is_a_power_of_2(a):
+    if a==1:
+        print("YES")
+    else:
+        if a%2==1:
+            print("NO")
+        else:
+            a=a/2
+            return is_a_power_of_2(a)
+is_a_power_of_2(a)
 
